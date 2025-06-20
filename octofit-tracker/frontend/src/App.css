@@ -1,0 +1,117 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #1a2238;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #e0eafc;
+}
+
+
+.App-link {
+  color: #21a1f3;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Bootstrap table custom colors */
+.table thead {
+  background-color: #1a2238;
+  color: #e0eafc;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f6f6f6;
+}
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #e0eafc;
+}
+
+/* Bootstrap button custom colors */
+.btn-primary, .btn-success, .btn-warning, .btn-info, .btn-secondary {
+  border-radius: 20px;
+  font-weight: 600;
+}
+.btn-primary {
+  background-color: #21a1f3;
+  border: none;
+}
+.btn-success {
+  background-color: #4bb543;
+  border: none;
+}
+.btn-warning {
+  background-color: #ffb400;
+  border: none;
+}
+.btn-info {
+  background-color: #17a2b8;
+  border: none;
+}
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, .card-title {
+  color: #1a2238;
+  font-weight: 700;
+}
+
+/* Navigation */
+.navbar {
+  background: linear-gradient(90deg, #1a2238 0%, #21a1f3 100%);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #e0eafc !important;
+  font-weight: 600;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+  color: #ffb400 !important;
+}
+
+/* Logo styles */
+.octofit-logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 12px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+/* Favicon styles (if needed for custom display) */
+.app-favicon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
