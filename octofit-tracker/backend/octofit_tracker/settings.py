@@ -25,8 +25,14 @@ SECRET_KEY = "django-insecure-a=z-r#r1(*nnt2l!78+hlc=u3-+f9nr20q%9i(yjnd-xv@fd4n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['*']  # Allow all hosts
+
+# Allow access from codespace URL and localhost
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'laughing-space-chainsaw-975wq99px9xpf7r6r-8000.app.github.dev',
+    '*',
+]
 
 # Application definition
 

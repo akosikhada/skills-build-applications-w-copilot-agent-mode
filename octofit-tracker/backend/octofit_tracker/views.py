@@ -10,7 +10,8 @@ def api_root(request, format=None):
     if request.method == 'POST':
         return Response({"message": "POST request received"}, status=status.HTTP_201_CREATED)
 
-    base_url = 'http://localhost:8000/'
+    # Use the actual codespace URL for endpoint responses
+    base_url = 'https://laughing-space-chainsaw-975wq99px9xpf7r6r-8000.app.github.dev/'
     return Response({
         'users': base_url + 'api/users/?format=api',
         'workouts': base_url + 'api/workouts/?format=api'
